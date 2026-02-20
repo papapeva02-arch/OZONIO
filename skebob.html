@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozonio — Вебмаркет необычных товаров!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        header {
+            background-color: #ffd700;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        article {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+            padding: 20px;
+            width: calc(33% - 40px);
+            /* Для трех колонок */
+            min-width: 250px;
+            background-color: white;
+            transition: transform .3s ease-in-out;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #ffd700;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Добро пожаловать в мир Ozonio!</h1>
+        <p>Здесь продаются самые необычные товары, которых вы нигде больше не найдёте!</p>
+    </header>
+
+    <main>
+        <article>
+            <h2>Светящиеся носки</h2>
+            <p>Пусть ваши ноги сияют ночью!</p>
+        </article>
+        <article>
+            <h2>Головоломки для мозгов</h2>
+            <p>Проверяйте свою смекалку каждый день!</p>
+        </article>
+        <article>
+            <h2>Футболки с юмором</h2>
+            <p>Одежда, которая заставит улыбнуться прохожих!</p>
+        </article>
+        <article>
+            <h2>Сумочки-невидимки</h2>
+            <p>Прячьте вещи незаметно и эффективно!</p>
+        </article>
+        <article>
+            <h2>Радужные зонтики</h2>
+            <p>Радуга даже в пасмурный день!</p>
+        </article>
+        <article>
+            <h2>Роботизированные тапочки</h2>
+            <p>Обувь, танцующая сама собой!</p>
+        </article>
+    </main>
+
+    <footer>
+        © Ozonio 2025 | Покупайте весело и ярко!
+    </footer>
+
+</body>
+
+</html>
