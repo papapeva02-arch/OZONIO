@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Проблемы отладки стилей CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid red;
+            /* Проблема №1: Неправильно выбран цвет границы */
+        }
+
+        h1 {
+            color: blueviolet;
+            /* Проблема №2: Использование редкого цвета текста */
+        }
+
+        p {
+            line-height: 1em;
+            /* Проблема №3: Маленькая высота строки для удобочитаемости */
+        }
+
+        img {
+            float: left;
+            /* Проблема №4: Не учтён эффект обтекания изображений */
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            /* Проблема №5: Нет подчёркивания ссылок */
+            color: inherit;
+            /* Проблемы с наследованием цвета */
+        }
+
+        @media screen and (max-width: 600px) {
+
+            /* Проблема №6: Неверно реализованная мобильная версия */
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <p>пупупупу.......</p>
+
+    <div class="container">
+        <h1>Отладка проблем с CSS</h1>
+        <p>Этот абзац предназначен для демонстрации проблемы с высотой строки.</p>
+        <img src="https://via.placeholder.com/150" alt="Пример изображения"> <!-- Пример изображения -->
+        <a href="#">Ссылка без подчеркивания</a>
+    </div>
+
 </body>
 
 </html>
