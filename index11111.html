@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @media (max-width: 600px) {
+            body {
+
+                grid-template-columns: 1fr;
+            }
+        }
+
+        #parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 4px solid rgb(110, 197, 185);
+            background-color: rgb(205, 255, 255);
+            font-size: 20px;
+            justify-content: space-around;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #ninja {
+            grid-template-columns: 200px 1fr
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Партфолио - Шульга Никита</title>
+</head>
+
+<body>
+    <header>
+        <img src=".\1.avif" alt="Slon">
+        <nav class="Pepa">
+            <div><a href="./index111.html">привет</a></div>
+            <div><a href="./ozon.html">привет</a></div>
+            <div><a href="./skebob.html">привет</a></div>
+        </nav>
+        <nav>
+            <div id="parent">
+                <div class="box">Картошка 2 шт</div>
+                <div class="box">Антошка 5 шт</div>
+                <div class="box">Окрошка 1л</div>
+                <div class="box">Макарошка 2 шт</div>
+                <div class="box">Ложка 3198 шт</div>
+                <div class="box">Сережка 2 шт</div>
+                <div class="box">Тарелка одна</div>
+                <div class="box">Микроволновка 1 шт</div>
+                <div class="box">Машинка розовая</div>
+                <div class="box">Ширинка застегнута</div>
+                <div class="box">Бульдзер да</div>
+                <div class="box">Аист да</div>
+                <div class="box">Альберт</div>
+                <div class="box">Альберт</div>
+                <div class="box">Альберт</div>
+                <div class="box">Альберт</div>
+            </div>
+        </nav>
+    </header>
+    <div id="ninja">
+        <div>Меню1</div>
+        <div>меню2</div>
+        <div>меню3</div>
+    </div>
+    <main>
+        <section>
+            <h1> О себе</h1>
+            <p>Студент 3 курса</p>
+            <p>Люблю энергетики</p>
+        </section>
+        <section>
+            <h2>Проекты</h2>
+            <article>
+                <p>Создал свой маркетплейс</p>
+                <img src=".\Безымянный.png" alt="Slon">
+            </article>
+            <article>
+                <p>Создал свой маркетплейс</p>
+                <img src=".\Безымянный.png" alt="Slon">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3>
+            Информация:
+        </h3>
+        <ul id="ninja">
+            <li>
+                телефон: 88005553535
+            </li>
+            <li>
+                почта: papapeva02@gmail.com
+            </li>
+            <li>
+                всем привет!
+            </li>
+        </ul>
+        <ol>
+            <li>Привет</li>
+            <li>Пакет</li>
+            <li>Кипет</li>
+        </ol>
+    </footer>
+</body>
+
+</html>
